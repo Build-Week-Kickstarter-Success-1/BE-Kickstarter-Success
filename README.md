@@ -1,5 +1,5 @@
 # Deployed API
-insert deployed API endpoint
+https://be-lambda-kickstarter-success.herokuapp.com/
 
 # Register / Login Endpoints
 | Request | URL | Description |
@@ -33,7 +33,9 @@ insert deployed API endpoint
 | user_id | integer | yes | no | references user who posted campaign |
 | monetary_goal | integer | yes | no | campaign monetary goal in USD |
 | description | string | yes | no | campaign description |
-| campagin_length | integer | yes | no | campaign length in number of months it will be live |
+| title | string | yes | no | campaign title |
+| launch_date | string | yes | no | campaign start date MM/DD/YYYY format |
+| finish_date | string | yes | no | campaign finish date MM/DD/YYYY format |
 | catagory | string | yes | no | catagory kickstarter fits in |
 
 # Reviews

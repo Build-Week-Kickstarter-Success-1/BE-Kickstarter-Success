@@ -12,8 +12,9 @@ exports.up = function(knex) {
       .onUpdate('CASCADE');
 
     campaigns.integer("monetary_goal").unsigned().notNullable();
-    campaigns.text("description").notNullable();
-    campaigns.integer("campaign_length").unsigned().notNullable();
+    campaigns.text("title").notNullable();
+    campaigns.text("launch_date").notNullable();
+    campaigns.text("finish_date").notNullable();
     campaigns.text("catagory").notNullable();
   });
 };

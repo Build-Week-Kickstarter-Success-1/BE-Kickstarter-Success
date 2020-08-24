@@ -13,6 +13,7 @@ exports.up = function(knex) {
 
     campaigns.integer("monetary_goal").unsigned().notNullable();
     campaigns.text("title").notNullable();
+    campaigns.text("description").notNullable();
     campaigns.text("launch_date").notNullable();
     campaigns.text("finish_date").notNullable();
     campaigns.text("category").notNullable();

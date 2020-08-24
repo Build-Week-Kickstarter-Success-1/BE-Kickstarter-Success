@@ -15,7 +15,7 @@ exports.up = function(knex) {
     campaigns.text("title").notNullable();
     campaigns.text("launch_date").notNullable();
     campaigns.text("finish_date").notNullable();
-    campaigns.text("catagory").notNullable();
+    campaigns.text("category").notNullable();
   });
 };
 

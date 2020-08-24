@@ -36,7 +36,7 @@ https://be-lambda-kickstarter-success.herokuapp.com/
 | title | string | yes | no | campaign title |
 | launch_date | string | yes | no | campaign start date MM/DD/YYYY format |
 | finish_date | string | yes | no | campaign finish date MM/DD/YYYY format |
-| catagory | string | yes | no | catagory kickstarter fits in |
+| category | string | yes | no | catagory kickstarter fits in |
 
 # Reviews
 | Name | Type | Required | Unique | Notes |

@@ -20,6 +20,7 @@ https://be-lambda-kickstarter-success.herokuapp.com/
 | ------- | --- | ----------- |
 | GET | api/reviews/:id | get campaign review with a specific ID (this ID is the campaign_id) |
 | POST | api/reviews | post a review for a campaign |
+| DELETE | api/reviews/:id | deletes a specific review |
 
 # Users
 | Name | Type | Required | Unique | Notes |

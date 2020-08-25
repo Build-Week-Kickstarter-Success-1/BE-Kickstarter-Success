@@ -28,4 +28,18 @@ router.post('/', (req, res) => {
     });
 });
 
+
+router.delete('/:id', (req, res) => {
+  const { id } = req.params;
+
+  Reviews.remove(id)
+    .then(project => {
+      res.status(201).json({ data: project });
+    })
+    .catch(error => {
+      console.log(error);
+      res.status(404).json({ errorMessage: "We could not delete the review" });
+    });
+});
+
 module.exports = router;

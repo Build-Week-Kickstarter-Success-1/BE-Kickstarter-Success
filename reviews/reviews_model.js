@@ -3,7 +3,8 @@ const db = require("../database/dbConfig.js");
 module.exports = {
   insert,
   getById,
-  get
+  get,
+  remove
 };
 
 
@@ -19,5 +20,11 @@ function insert(campaign) {
   return db("reviews")
     .insert(campaign, "id")
     .then(([id]) => get(id));
+}
+
+function remove(id) {
+  return db("reviews")
+    .where("id", id)
+    .del();
 }
 

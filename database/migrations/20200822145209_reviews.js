@@ -12,7 +12,13 @@ exports.up = function(knex) {
         .onDelete('CASCADE')
         .onUpdate('CASCADE');
 
-      reviews.integer("review").unsigned().notNullable();
+      reviews.integer("prediction").unsigned();
+      reviews.integer("probability_of_success").unsigned();
+      reviews.text("monetary_feedback").unsigned();
+      reviews.text("title_feedback").unsigned();
+      reviews.text("description_feedback").unsigned();
+      reviews.text("campaign_time_feedback").unsigned();
+      reviews.text("month_feedback").unsigned();
     });
   };
   

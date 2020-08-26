@@ -43,4 +43,10 @@ https://be-lambda-kickstarter-success.herokuapp.com/
 | Name | Type | Required | Unique | Notes |
 | ---- | ---- | -------- | ------ | ----- |
 | campaign_id | integer | yes | yes | references a campaign that the review goes to |
-| review | integer | yes | no | a review given to that campaign |
+| prediction | integer | yes | no | 0 if fail 1 if pass |
+| probability_of_success | integer | yes | no | 0-100 percent chance of success |
+| monetary_feedback | string | yes | no | review on monetary goal |
+| title_feedback | string | yes | no | review on title |
+| description_feedback | string | yes | no | review on description |
+| campaign_time_feedback | string | yes | no | review on time kickstarter will last |
+| month_feedback | string | yes | no | review on start date |
